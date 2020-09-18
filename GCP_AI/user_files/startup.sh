@@ -17,11 +17,20 @@ mkdir data
 
 gsutil cp gs://$BUCKET_NAME/secrets/access_token ./data
 TOKEN=$(<./data/access_token)
+
+########################################################################################
+# TO DO
+########################################################################################
+# 1) Clone repo
+# 2) Install packages
+# 3) Run code
+
 git clone https://shu244:$TOKEN@github.com/shu244/test_gcp_ai.git
-
 cd test_gcp_ai
-
 python MNIST_test.py
+########################################################################################
+# TO DO END
+########################################################################################
 
 export NAME=$(curl -X GET http://metadata.google.internal/computeMetadata/v1/instance/name -H 'Metadata-Flavor: Google')
 export ZONE=$(curl -X GET http://metadata.google.internal/computeMetadata/v1/instance/zone -H 'Metadata-Flavor: Google')
