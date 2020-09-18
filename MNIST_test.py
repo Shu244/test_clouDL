@@ -120,7 +120,7 @@ if __name__ == '__main__':
     testing = False
 
     if testing:
-        from streamline.manager import TestManager
+        from GCP_AI.manager import TestManager
         manager = TestManager.create_manager({
             "BATCH_SIZE": 64,
             "EPOCHS": 5,
@@ -129,7 +129,7 @@ if __name__ == '__main__':
             "SAVE_INTERVAL": 2
         })
     else:
-        from streamline.manager import Manager
+        from GCP_AI.manager import Manager
         manager = Manager.create_manager()
 
     manager.hyparam_search(run)
