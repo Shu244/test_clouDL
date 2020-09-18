@@ -1,0 +1,6 @@
+data
+base
+*.pyc
+secrets*
+access_token*
+tmp

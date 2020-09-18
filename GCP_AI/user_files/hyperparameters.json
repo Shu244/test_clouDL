@@ -1,0 +1,22 @@
+{
+  "iterations": 6,
+  "hyperparameters" : [
+    {
+      "BATCH_SIZE": 128,
+      "EPOCHS": 5,
+      "GAMMA": 0.7,
+      "LR": {
+        "data": [1, 3],
+        "method": "uniform random"
+      },
+      "SAVE_INTERVAL": 2
+    },
+    {
+      "LR": [1, 2]
+    }
+  ],
+  "comments": [
+    "method can be 'uniform random', 'list', 'step', and 'multiple'",
+    "list: values will be tried sequentially and retried (if necessary) until iterations end"
+  ]
+}
