@@ -15,8 +15,8 @@ mkdir code
 cd code
 mkdir data
 
-gsutil cp gs://$BUCKET_NAME/secrets/access_token ./data
-TOKEN=$(<./data/access_token)
+#gsutil cp gs://$BUCKET_NAME/secrets/access_token ./data
+#TOKEN=$(<./data/access_token)
 
 ########################################################################################
 # TO DO
@@ -25,7 +25,7 @@ TOKEN=$(<./data/access_token)
 # 2) Install packages
 # 3) Run code
 
-git clone https://shu244:$TOKEN@github.com/shu244/test_gcp_ai.git
+git clone https://github.com/Shu244/test_gcp_ai.git
 cd test_gcp_ai
 python MNIST_test.py
 ########################################################################################
