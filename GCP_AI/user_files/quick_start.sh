@@ -18,7 +18,6 @@ if [ "$MODE" == "new" ]; then
 
   python -m GCP_AI.prep_and_start $PROJECT_ID \
     $BUCKET_NAME \
-    --tokenpth $BASE/access_token \
     --mkbucket \
     --archive $ARCHIVE \
     --hyparams $BASE/hyperparameters.json \
@@ -37,7 +36,6 @@ elif [ "$MODE" = "manual" ]; then
 
   python -m GCP_AI.prep_and_start $PROJECT_ID \
     $BUCKET_NAME \
-    --tokenpth $BASE/access_token \
     --mkbucket \
     --archive $ARCHIVE \
     --hyparams $BASE/hyperparameters.json \
