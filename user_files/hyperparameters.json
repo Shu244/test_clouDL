@@ -1,0 +1,25 @@
+{
+  "iterations": 6,
+  "hyperparameters" : [
+    {
+      "BATCH_SIZE": 128,
+      "EPOCHS": 5,
+      "GAMMA": 0.7,
+      "LR": {
+        "data": [1, 3],
+        "method": "uniform random"
+      },
+      "SAVE_INTERVAL": 2
+    },
+    {
+      "LR": [1, 2]
+    }
+  ],
+  "helper": [
+    "iterations specify the number of times one virtual machine should explore the given hyperparameter space",
+    "Each VM will receive a map in the hyperparameters array",
+    "If certain hyperparameters are omitted, they will be grabbed from the first hyperparameter map",
+    "LR method can be 'uniform random', 'list', 'step', and 'multiple'",
+    "For the 'list' method, values will be tried sequentially and retried (if necessary) until iterations end"
+  ]
+}

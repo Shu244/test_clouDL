@@ -1,0 +1,18 @@
+{
+  "zones": ["us-central1-b", "us-central1-c", "us-central1-f", "us-central1-a"],
+  "gpu": "nvidia-tesla-t4",
+  "gpu_count": 1,
+  "sourceImage": "projects/ml-images/global/images/c0-deeplearning-common-cu110-v20201105-debian-10",
+  "diskSizeGb": "100",
+  "preemptible": true,
+  "name_prefix": "vm",
+  "cpu_count": 2,
+  "warnings": [
+    "cpu counts must be a power of 2",
+    "Needs more test for multiple GPU",
+    "Needs for test for CPU"
+  ],
+  "comments": [
+    "All the available options for zones, gpu, and family can be obtained by configuring a compute engine instance on GCP then getting the equivalent REST request"
+  ]
+}

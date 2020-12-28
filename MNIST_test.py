@@ -120,7 +120,7 @@ if __name__ == '__main__':
     testing = False
 
     if testing:
-        from GCP_AI.manager import TestManager
+        from clouDL.manager import TestManager
         manager = TestManager.create_manager({
             "BATCH_SIZE": 64,
             "EPOCHS": 5,
@@ -129,7 +129,7 @@ if __name__ == '__main__':
             "SAVE_INTERVAL": 2
         })
     else:
-        from GCP_AI.manager import Manager
-        manager = Manager.create_manager()
+        from clouDL.manager import Manager
+        manager = Manager.create_manager(torch)
 
     manager.hyparam_search(run)
