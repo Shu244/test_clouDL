@@ -1,6 +1,6 @@
 # Overview
-This repo shows an example of using the GCP_AI package. First, make sure you have completed the setup portion
- of the readme in the GCP_AI package. To start, execute 
+This repo shows an example of using the GCP_AI package. First, install
+the `clouDL` package using `pip install clouDL`. To start, execute 
 
 <code>clouDL_create</code>
 
