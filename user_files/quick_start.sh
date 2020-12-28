@@ -20,7 +20,7 @@ if [ "$MODE" == "new" ]; then
     --archive $ARCHIVE \
     --hyparams $BASE/hyperparameters.json \
     --location us-central1 \
-    --cluster $WORKERS $BASE/configs.json $BASE/startup.sh
+    --cluster $WORKERS $BASE/configs.json $BASE/user_startup.sh
 
 elif [ "$MODE" = "resume" ]; then
 
@@ -28,7 +28,7 @@ elif [ "$MODE" = "resume" ]; then
     $BUCKET_NAME \
     --archive $ARCHIVE \
     --hyparams $BASE/hyperparameters.json \
-    --cluster $WORKERS $BASE/configs.json $BASE/startup.sh
+    --cluster $WORKERS $BASE/configs.json $BASE/user_startup.sh
 
 elif [ "$MODE" = "manual" ]; then
 

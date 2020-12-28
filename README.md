@@ -6,7 +6,7 @@ This repo shows an example of using the GCP_AI package. First, make sure you hav
 
 Then configure the generated files to control your VMs. Next, run
 
-<code>bash quick_start.sh new PROJECT_ID mnist-example</code>.
+<code>bash ./user_files/quick_start.sh new PROJECT_ID mnist-example</code>
 
 When the training has finished, execute 
 
